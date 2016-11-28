@@ -1,3 +1,3 @@
-React Task Manager App
+React Task Manager App for Kids
 
-Demo the app at http://young-ocean-90126.herokuapp.com/ 
+

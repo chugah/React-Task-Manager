@@ -6,6 +6,8 @@ import AddTodo from 'AddTodo';
 import TodoList from 'TodoList';
 import TodoSearch from 'TodoSearch';
 
+var header_path = 'images/marching-minions.jpg';
+var todo_img_path = 'images/card-minion.jpg';
 
 class TodoApp extends Component {
 	constructor(props) {
@@ -49,19 +51,53 @@ class TodoApp extends Component {
 			searchText: searchText.toLowerCase()
 		});
 	}
+	renderHeaderImage() {
+		return (
+			<div>
+				<div className="expanded row">
+					<div className="column large-12">
+	    				<img src={header_path} width="100%" />
+	    			</div>
+	    		</div>
+	    	</div>
+		);
+	}
+	renderAddTodoImage(){
+		return (
+			<div className="todo-image">
+				<img src={todo_img_path} />
+			</div>
+		);
+	}
 	render() {
-		var {todos, showCompleted, searchText} = this.state;
+		var { todos, showCompleted, searchText } = this.state;
 		var filteredTodos = TodoAPI.filterTodos(todos, showCompleted, searchText);
 
 		return (
 			<div>
-				<h1 className="page-title">TodoApp</h1>
+				{this.renderHeaderImage()}
+				<div className="row" id="header-row">
+					<div className="column large-2">
+						<div>
+							{this.renderAddTodoImage()}
+						</div>
+					</div>
+					<div className="column large-10">
+						<div className="container">
+							<AddTodo onAddTodo={this.handleAddTodo.bind(this)} />
+						</div>
+					</div>
+				</div>
 				<div className="row">
-					<div className="column small-centered small-11 medium-6 large-5">
+					<TodoList todos={filteredTodos} onToggle={this.handleToggle.bind(this)}/>
+				</div>	
+				<div className="row">
+					<div className="column large-2">
+						<img src="http://i.giphy.com/YqTzLj0Vzct9K.gif" id="bounce-minion" />
+					</div>
+					<div className="column large-10">
 						<div className="container">
 							<TodoSearch onSearch={this.handleSearch.bind(this)} />
-							<TodoList todos={filteredTodos} onToggle={this.handleToggle.bind(this)}/>
-							<AddTodo onAddTodo={this.handleAddTodo.bind(this)} />
 						</div>
 					</div>
 				</div>			

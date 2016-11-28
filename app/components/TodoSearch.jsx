@@ -9,16 +9,14 @@ class TodoSearch extends Component {
 	}
 	render() {
 		return (
-			<div className="container__header">
+			<div className="container-add-todo">
 				<div>
 					<input type="search" ref="searchText" placeholder="Search todos" onChange={this.handleSearch.bind(this)}/>
 				</div>
-				<div>
-					<label>
-						<input type="checkbox" ref="showCompleted" onChange={this.handleSearch.bind(this)}/>
-						Show completed todos
+					<input type="checkbox" ref="showCompleted" onChange={this.handleSearch.bind(this)} />
+					<label>	
+						Tasks that are finished
 					</label>
-				</div>
 			</div>
 		);
 	}

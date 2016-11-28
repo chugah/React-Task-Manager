@@ -1,28 +1,28 @@
-/*  
-imports in app/styles/app.scss
-@import "base/variables";
-
-FOR FOUNDATION - SASS
-@import "base/foundation-settings";
-@import "foundation";
-@include foundation-everything;
-
-Components
-@import "components/page-title"
-
-*/
-.page-title {
-	margin: 0;
-	padding: 2rem 0;
-	text-align: center;
-}
-
+/* ==================================== 
+TodoApp Component
+==================================== */
 .container {
 	background: #FAFAFA;
-	border: 1px solid #EEEEEE;
+	border: 1px solid #FF9900;
 	border-radius: 5px;
 	padding: 0;
 	margin-bottom: 2rem;
+}
+
+#header-row {
+ margin-top: 2rem;
+}
+
+/* ==================================== 
+Todo Component
+==================================== */
+
+.list-item {
+	cursor: pointer;
+	display: inline;
+	padding: 1rem;
+	transition: background .3s ease;
+	border: 2px solid green;
 }
 
 .container__header {
@@ -37,8 +37,10 @@ Components
 	display: flex;
 }
 
-.container__footer {
-	border-top: 1px solid #EEEEEE;
+/* ==================================== 
+AddTodo Component
+==================================== */
+.container-add-todo {
 	padding: 1rem 1rem 0rem 1rem;
 }
 
@@ -65,9 +67,7 @@ p:first-child:hover, .todo__subtext:hover {
 	background: #F0F0F0;
 }
 
-.todo__subtext {
-	color: #999999;
-}
+
 
 .todo-completed p {
 	color: #AAAAAA;
@@ -78,3 +78,82 @@ p:first-child:hover, .todo__subtext:hover {
 	color: #AAAAAA;
 	text-decoration: line-through;
 }
+
+/* ==================================== 
+TodoSearch Component
+==================================== */
+
+
+#bounce-minion {
+	opacity: 0.8;
+}
+
+.round-button {
+  	width: 28px;
+	height: 28px;
+	position: relative;
+	margin: 20px auto;
+	background: #fcfff4;
+	background: -webkit-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	background: linear-gradient(to bottom, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+	border-radius: 50px;
+	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.round-button label {
+  	width: 20px;
+  	height: 20px;
+  	cursor: pointer;
+  	position: absolute;
+  	left: 4px;
+  	top: 4px;
+  	background: -webkit-linear-gradient(top, #222222 0%, #45484d 100%);
+  	background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+  	border-radius: 50px;
+  	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px white;
+}
+.round-button label:after {
+  	content: '';
+  	width: 16px;
+  	height: 16px;
+  	position: absolute;
+  	top: 2px;
+  	left: 2px;
+  	background: #27ae60;
+  	background: -webkit-linear-gradient(top, #27ae60 0%, #145b32 100%);
+  	background: linear-gradient(to bottom, #27ae60 0%, #145b32 100%);
+  	opacity: 0;
+  	border-radius: 50px;
+  	box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.round-button label:hover::after {
+  	opacity: 0.3;
+}
+.round-button input[type=checkbox] {
+  	visibility: hidden;
+}
+.round-button input[type=checkbox]:checked + label:after {
+  	opacity: 1;
+}
+/*
+
+.page-title {
+	margin: 0;
+	padding: 2rem 0;
+	text-align: center;
+}
+
+.todo {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	padding: 1rem;
+	transition: background .3s ease;
+}
+
+.todo__subtext {
+	color: #999999;
+}
+
+*/
+
