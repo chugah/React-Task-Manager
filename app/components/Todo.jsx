@@ -17,14 +17,16 @@ class Todo extends Component {
 			return message + moment.unix(timestamp).format('MMMM Do, YYYY @ h:mm a');
 		};
 		var renderImage = () => {
-			return <p>Minion Image</p>
+			var item_img_path = 'images/minion-list.jpg';
+
+			return 	<img className="todo-list-image" src={item_img_path} />;	
 		};
 		return (
 			<div className={todoClassName} onClick={ () => {
 				this.props.onToggle(id);
 			}}>
-				<div className="list-item"><input type="checkbox" checked={completed} /></div>
 				<div className="list-item">{renderImage()}</div>
+				<div className="list-item"><input type="checkbox" checked={completed} /></div>
 				<div className="list-item"><p >{text}</p></div>
 				<div className="list-item"><p>{renderDate()}</p></div>
 			</div>
