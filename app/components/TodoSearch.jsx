@@ -13,10 +13,13 @@ class TodoSearch extends Component {
 				<div>
 					<input type="search" ref="searchText" placeholder="Search todos" onChange={this.handleSearch.bind(this)}/>
 				</div>
-					<input type="checkbox" ref="showCompleted" onChange={this.handleSearch.bind(this)} />
+				<div className="checkbox">
 					<label>	
+						<input type="checkbox" id="checkbox1"  ref="showCompleted" onChange={this.handleSearch.bind(this)} />
+						<span className="custom-checkbox"><i className="icon-check"></i></span>
 						Tasks that are finished
 					</label>
+				</div>
 			</div>
 		);
 	}
