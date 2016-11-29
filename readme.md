@@ -1,3 +1,2 @@
-A React web application for kids to help them manage tasks
-
+React Task Manager App for Kids
 
