@@ -26,7 +26,9 @@ class Todo extends Component {
 				this.props.onToggle(id);
 			}}>
 				<div className="list-item">{renderImage()}</div>
-				<div className="list-item"><input type="checkbox" checked={completed} /></div>
+				<div className="list-item checkbox"><input type="checkbox" id="checkbox1" checked={completed} />
+					<span className="custom-checkbox"><i className="icon-check"></i></span>
+				</div>
 				<div className="list-item"><p >{text}</p></div>
 				<div className="list-item"><p>{renderDate()}</p></div>
 			</div>
