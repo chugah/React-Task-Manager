@@ -71,13 +71,25 @@ TodoList Component
 ==================================== */
 
 .container-message {
-	color: #AAAAAA;
+	color: #FF9900;
+  font-family: Impact;
+  font-size: 2rem;
 	margin: 2rem auto;
 	text-align: center;
 }
 
 .todo-list-container {
 	margin-bottom: 2rem;
+}
+
+#background-todo-list {
+  background: none;
+  border: none !important;
+  margin-left: 150px;
+}
+
+#plugin-minion {
+  opacity: 0.8;
 }
 
 /* ==================================== 
@@ -122,7 +134,7 @@ TodoSearch Component
   	top: 0px;
   	left: 0px;
   	-webkit-transform: scale(0);
-          transform: scale(0);
+    transform: scale(0);
   	-webkit-transition: all 180ms ease;
   	transition: all 180ms ease; }
 
