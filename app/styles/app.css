@@ -58,6 +58,13 @@ TodoApp Component
 	position: relative;
 }
 
+.todoapp-copy {
+  color: #000;
+  font-family: Impact;
+  font-size: 2rem;
+  text-align: center;
+}
+
 #bounce-minion {
 	opacity: 0.7;
 }

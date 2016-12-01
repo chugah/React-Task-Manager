@@ -69,6 +69,11 @@ class TodoApp extends Component {
 		return (
 			<div>
 				{this.renderHeaderImage()}
+				<div className="row">
+					<div className="large-12 column">
+						<p className="todoapp-copy">The minions are here to make sure you have FUN getting things done on your list!</p>
+					</div>
+				</div>
 				<div className="row" id="header-row">
 					<div className="large-2 column todo-image">
 						<div>
