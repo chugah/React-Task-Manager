@@ -12,8 +12,7 @@ class TodoList extends Component {
 						<div className="row">
 							<div className="large-12 large-centered column">
 								<div className="container" id="background-todo-list">
-									<h3 className="container-message">Congratulations!</h3>
-									<p className="container-message">You have finished everything on your list.</p>
+									<h4 className="container-message">AMEE PUDUM KA HEP TO?</h4>
 									<img src= "http://i.imgur.com/zt6Na6V.gif" id="plug-minion" width="100%" height="50%" />
 								</div>				
 							</div>
