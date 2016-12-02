@@ -5,6 +5,7 @@ import TodoAPI from 'TodoAPI';
 import AddTodo from 'AddTodo';
 import TodoList from 'TodoList';
 import TodoSearch from 'TodoSearch';
+import Translator from 'Translator';
 
 var header_path = 'images/marching-minions.jpg';
 var todo_img_path = 'images/card-minion.jpg';
@@ -99,6 +100,11 @@ class TodoApp extends Component {
 						<div className="container">
 							<TodoSearch onSearch={this.handleSearch.bind(this)} />
 						</div>
+					</div>
+				</div>
+				<div className="row">
+					<div className="large-12 column">
+						<Translator />
 					</div>
 				</div>			
 			</div>
