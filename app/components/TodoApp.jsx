@@ -7,7 +7,6 @@ import TodoList from 'TodoList';
 import TodoSearch from 'TodoSearch';
 import Translator from 'Translator';
 
-var header_path = 'images/marching-minions.jpg';
 var todo_img_path = 'images/card-minion.jpg';
 
 class TodoApp extends Component {
@@ -52,24 +51,12 @@ class TodoApp extends Component {
 			searchText: searchText.toLowerCase()
 		});
 	}
-	renderHeaderImage() {
-		return (
-			<div>
-				<div className="expanded row">
-					<div className="column large-12">
-	    				<img src={header_path} width="100%" />
-	    			</div>
-	    		</div>
-	    	</div>
-		);
-	}
 	render() {
 		var { todos, showCompleted, searchText } = this.state;
 		var filteredTodos = TodoAPI.filterTodos(todos, showCompleted, searchText);
 
 		return (
-			<div>
-				{this.renderHeaderImage()}
+			<div className="position">
 				<div className="row">
 					<div className="large-12 column">
 						<p className="todoapp-copy">The minions are here to make sure you have FUN getting things done on your list!</p>

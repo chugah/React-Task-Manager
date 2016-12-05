@@ -58,6 +58,10 @@ TodoApp Component
 	position: relative;
 }
 
+.position {
+  margin-top: -125px;
+}
+
 .todoapp-copy {
   color: #000;
   font-family: Impact;
@@ -106,7 +110,7 @@ h4 {
     letter-spacing: 0;
   }
   100% {
-    -webkit-text-stroke: 8px #000;
+    -webkit-text-stroke: 8px #32CD32;
     letter-spacing: 18px;
   }
 }
@@ -193,14 +197,6 @@ TodoSearch Component
 Translator Component
 ==================================== */
 
-#canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 button.btn {
     position: relative;
     float: right;
@@ -219,6 +215,31 @@ button:focus {
     outline: none;
 }
 
+.container-translator {
+  background: #FAFAFA;
+  border: 1px solid #FF9900;
+  border-radius: 5px;
+  padding: 2rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+hr {
+    display: none;
+}
+
+.nixfocus {
+    padding: 16px;
+    width: 100%;
+    border: #d0d6dc solid 1px;
+    border-radius: 5px;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+.nixfocus:focus {
+    outline: none;
+}
+
 .try {
     margin: 4px auto;
     width: 60%;
@@ -228,21 +249,10 @@ button:focus {
     font-weight: 200;
 }
 
-.nixfocus {
-    padding: 16px;
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    border: #d0d6dc solid 1px;
-    border-radius: 5px;
-    font-weight: lighter;
-    font-size: 24px;
+    height: 100%;
 }
-.nixfocus:focus {
-    outline: none;
-}
-
-hr {
-    display: none;
-}
-
-
-

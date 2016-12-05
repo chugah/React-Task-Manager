@@ -20,11 +20,11 @@ class Translator extends Component {
 	render(){
 		return (
 			<div>
-				<div className="container">
+				<div className="container-translator">
 			        <div className="row">
 			            <div className="large-4 column">
 			            	<h3>English</h3>
-			                <input type="text" className="nixfocus mt-patient" id="mt-input" placeholder="Try it out!" />
+			                <textarea type="text" className="nixfocus mt-patient" id="mt-input" placeholder="Try it out!" />
 			            </div>
 			            <hr />
 			            <div className="large-4 column">
@@ -34,7 +34,7 @@ class Translator extends Component {
 			            <hr />
 			            <div className="large-4 column">
 			                <h3 align="right">Minionese</h3>
-			                <input type="text" className="nixfocus mt-patient" id="mt-output" placeholder="Click 'Translate it'!" />
+			                <textarea type="text" className="nixfocus mt-patient" id="mt-output" placeholder="Click 'Translate it'!" />
 			            </div>
 			        </div>
 				</div>
