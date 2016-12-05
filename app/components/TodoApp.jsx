@@ -59,7 +59,15 @@ class TodoApp extends Component {
 			<div className="position">
 				<div className="row">
 					<div className="large-12 column">
-						<p className="todoapp-copy">The minions are here to make sure you have FUN getting things done on your list!</p>
+						<p className="todoapp-copy">
+						The minions are here to help you have FUN getting things DONE!
+						</p>
+						<p id="todoapp-instructions">
+						Jerry is ready to rock. Just type in the box.
+						</p>
+						<p>
+
+						</p>
 					</div>
 				</div>
 				<div className="row" id="header-row">

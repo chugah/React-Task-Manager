@@ -26,12 +26,13 @@ Todo Component
 }
 
 p {
+  font-family: Impact;
 	margin: 0;
 	padding: 0.5rem;
 }
 
 p:first-child:hover, .todo-subtext:hover {
-	background: #F0F0F0;
+	background: #FFAD33;
 }
 
 .todo {
@@ -77,16 +78,22 @@ TodoApp Component
  margin-top: 2rem;
 }
 
+#todoapp-instructions {
+  font-size: 2rem;
+  text-align: center;
+}
+
 /* ==================================== 
 TodoList Component
 ==================================== */
 
 .container-message {
 	color: #32CD32;
-  font-family: Impact;
-  font-size: 2rem;
+  font-family: Arial;
+  font-size: 1rem;
 	margin: 2rem auto;
 	text-align: center;
+  width: 700px;
 }
 
 .todo-list-container {
@@ -94,11 +101,8 @@ TodoList Component
 }
 
 h4 {
-  font-family: Impact;
-  font-size: 3rem !important;
   -webkit-text-stroke: 2px #F04124;
   -webkit-text-fill-color: #FFF; 
-  color: #000;
       
   -webkit-animation: colorchange 5s infinite;
   -webkit-animation-direction: alternate;
@@ -119,7 +123,7 @@ h4 {
 #background-todo-list {
   background: none;
   border: none !important;
-  margin-left: 150px;
+  margin-left: 60px;
 }
 
 #plugin-minion {
