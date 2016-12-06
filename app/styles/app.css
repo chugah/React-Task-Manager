@@ -130,66 +130,67 @@ TodoSearch Component
 ==================================== */
 
 .checkbox label {
-  	display: block;
-  	position: relative;
-  	cursor: pointer;
-  	font-size: 0.875rem;
-  	line-height: 1;
+  cursor: pointer;
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1;
+  position: relative; 
 }
 
 .checkbox input[type="checkbox"] {
-  	top: 0;
-  	left: 0;
-  	visibility: hidden;
+  left: 0;
+  top: 0;
+  visibility: hidden;
 }
 
 .checkbox .custom-checkbox {
-  	display: inline-block;
-  	vertical-align: top;
-  	margin: 0 6px 0 0;
-  	width: 18px;
-  	height: 18px;
-  	border: 1px solid #1583cc;
-  	position: relative;
+  border: 1px solid #1583cc;
+  display: inline-block;
+  height: 18px;
+  margin: 0 6px 0 0;
+  position: relative;
+  vertical-align: top;
+  width: 18px;
 }
 
 .checkbox .custom-checkbox {
-  	background: #1583cc;
-  	box-shadow: inset 0 0 0 12px #fff;
-  	top: -2px; 
+  background: #1583cc;
+  box-shadow: inset 0 0 0 12px #fff;
+  top: -2px; 
 }
 
-.checkbox .icon-check {
-  	width: 20px;
-  	height: 20px;
-  	background-size: cover;
-  	position: absolute;
-  	top: 0px;
-  	left: 0px;
-  	-webkit-transform: scale(0);
-    transform: scale(0);
-  	-webkit-transition: all 180ms ease;
-  	transition: all 180ms ease; }
+.checkbox .icon-check { 
+  background-size: cover;
+  height: 20px;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 180ms ease;
+  transition: all 180ms ease; 
+  width: 20px;
+}
 
 .icon-check:before {
-  	position: absolute;
-  	content: '\2713';
-  	width: 12px;
-  	font-size: 12.66667px;
-  	text-align: center;
-  	line-height: 16px;
-  	color: #fff;
-  	font-weight: bold; 
+  color: #fff;
+  content: '\2713';
+  font-size: 12.66667px;
+  font-weight: bold; 
+  line-height: 16px;
+  position: absolute;
+  text-align: center;
+  width: 12px;  
 }
 
 .checkbox input[type="checkbox"]:checked + .custom-checkbox {
-  	border-color: #2095F0;
-  	box-shadow: none; 
+  border-color: #2095F0;
+  box-shadow: none; 
 }
 
 .checkbox input[type="checkbox"]:checked + .custom-checkbox .icon-check {
-  	-webkit-transform: scale(1);
-    transform: scale(1); 
+  -webkit-transform: scale(1);
+  transform: scale(1); 
 }
 
 .checkbox-text {
@@ -206,17 +207,18 @@ Translator Component
 ==================================== */
 
 button.btn {
-    position: relative;
-    float: right;
-    margin: 114px auto;
-    width: 100%;
-    height: 54px;
-    border: #d0d6dc solid 2px;
-    color: #596066;
+  border: #d0d6dc solid 2px;
+  color: #596066;
+  float: right; 
+  height: 54px;
+  margin: 114px auto;
+  position: relative;
+  width: 100%;
 }
+
 button.btn:hover, button.btn:focus {
-    outline: none;
-    border: rgb(158,164,170) solid 2px;
+  border: rgb(158,164,170) solid 2px;
+  outline: none;    
 }
 
 button:focus {
@@ -227,8 +229,8 @@ button:focus {
   background: #FAFAFA;
   border: 1px solid #FF9900;
   border-radius: 5px;
-  padding: 2rem;
   margin-top: 2rem;
+  padding: 2rem;
   position: relative;
 }
 
@@ -237,30 +239,43 @@ hr {
 }
 
 .nixfocus {
-    padding: 16px;
-    width: 100%;
-    border: #d0d6dc solid 1px;
-    border-radius: 5px;
-    font-weight: lighter;
-    font-size: 2rem;
+  border: #d0d6dc solid 1px;
+  border-radius: 5px;
+  font-weight: normal;
+  font-size: 2rem;
+  min-height: 200px;
+  padding: 16px;
+  width: 300px;
 }
+
 .nixfocus:focus {
     outline: none;
 }
 
 .try {
-    margin: 4px auto;
-    width: 60%;
+  margin: 4px auto;
+  width: 60%;
 }
 .try h3 {
-    padding: 10px 4px;
-    font-weight: 200;
+  font-weight: 200;
+  padding: 10px 4px;    
 }
 
 #canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0; 
+  width: 100%;   
+}
+
+#minion-button {
+  background: transparent;
+  height: 150px;
+  width: 150px;
+}
+
+#mt-button {
+  height: 200px;
+  width: 300px;
 }
