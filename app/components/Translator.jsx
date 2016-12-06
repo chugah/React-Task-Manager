@@ -21,7 +21,7 @@ class Translator extends Component {
   	}
 	render(){
 		return (
-			<div>
+			<div id="translator">
 				<div className="row">
 					<div className="large-12 large-centered column">
 						<p className="todoapp-copy">It is so much fun to learn Minionese.</p>
