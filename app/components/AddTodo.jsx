@@ -18,7 +18,7 @@ class AddTodo extends Component {
 				<div className="container-add-todo">
 					<form onSubmit={this.handleSubmit.bind(this)}>
 						<input type="text" ref="todoText" placeholder="What do you need to do?"/>
-						<button className="button expanded">Put it on the list</button>
+						<button className="button expanded">Add it to the list!</button>
 					</form>
 				</div>
 			</div>

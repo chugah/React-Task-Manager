@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+var arrow_path = 'images/arrow.jpg';
+
 class TodoSearch extends Component {
 	handleSearch() {
 		var showCompleted = this.refs.showCompleted.checked;
@@ -17,7 +19,10 @@ class TodoSearch extends Component {
 					<label>	
 						<input type="checkbox" id="checkbox1"  ref="showCompleted" onChange={this.handleSearch.bind(this)} />
 						<span className="custom-checkbox"><i className="icon-check"></i></span>
-						Tasks that are finished
+						<img id="arrow" src={arrow_path} />
+						<span className="checkbox-text">
+						Click this box to see what you and the minions and have finished.
+						</span>
 					</label>
 				</div>
 			</div>

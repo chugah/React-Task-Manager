@@ -13,7 +13,7 @@ class TodoList extends Component {
 							<div className="large-12 large-centered column">
 								<div className="container" id="background-todo-list">
 									<h4 className="container-message">
-									WHAT DO YOU NEED TO DO?
+									JERRY AND HIS CREW ARE EAGER TO HELP.
 									</h4>
 									<img src= "http://i.imgur.com/zt6Na6V.gif" id="plug-minion" width="100%" height="50%" />
 								</div>				

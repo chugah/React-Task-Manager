@@ -31,7 +31,7 @@ p {
 	padding: 0.5rem;
 }
 
-p:first-child:hover, .todo-subtext:hover {
+p:hover, .todo-subtext:hover {
 	background: #FFAD33;
 }
 
@@ -78,11 +78,6 @@ TodoApp Component
  margin-top: 2rem;
 }
 
-#todoapp-instructions {
-  font-size: 2rem;
-  text-align: center;
-}
-
 /* ==================================== 
 TodoList Component
 ==================================== */
@@ -90,7 +85,7 @@ TodoList Component
 .container-message {
 	color: #32CD32;
   font-family: Arial;
-  font-size: 1rem;
+  font-size: 2rem;
 	margin: 2rem auto;
 	text-align: center;
   width: 700px;
@@ -115,7 +110,7 @@ h4 {
   }
   100% {
     -webkit-text-stroke: 8px #32CD32;
-    letter-spacing: 18px;
+    letter-spacing: 24px;
   }
 }
 
@@ -195,6 +190,15 @@ TodoSearch Component
 .checkbox input[type="checkbox"]:checked + .custom-checkbox .icon-check {
   	-webkit-transform: scale(1);
     transform: scale(1); 
+}
+
+.checkbox-text {
+  color: #00558B;
+}
+
+#arrow {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 /* ==================================== 
