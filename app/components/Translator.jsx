@@ -24,7 +24,9 @@ class Translator extends Component {
 			<div id="translator">
 				<div className="row">
 					<div className="large-12 large-centered column">
-						<p className="todoapp-copy">It is so much fun to learn Minionese.</p>
+						<p className="todoapp-copy">Bob, Stuart, and Dave want you to have fun learning Minionese.</p>
+						<p className="todoapp-copy">So they hired a bunch of hacks from San Francisco to create a translation thingamajig.</p>
+						<p className="todoapp-copy">Just enter something you want to say in english and hit the magic button.</p>
 					</div>
 				</div>	
 				<div className="container-translator">

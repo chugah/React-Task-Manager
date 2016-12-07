@@ -63,7 +63,7 @@ class TodoApp extends Component {
 						The minions are here to help you have FUN getting things DONE!
 						</p>
 						<p className="todoapp-copy">
-						Jerry is ready to rock. Just type in the box.
+						Bob is ready to rock. Just type in the box.
 						</p>
 					</div>
 				</div>
