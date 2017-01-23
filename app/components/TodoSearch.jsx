@@ -21,7 +21,7 @@ class TodoSearch extends Component {
 						<span className="custom-checkbox"><i className="icon-check"></i></span>
 						<img id="arrow" src={arrow_path} />
 						<span className="checkbox-text">
-						Click this box to see what you and the minions and have finished.
+						Click this box to see what you and the minions have finished.
 						</span>
 					</label>
 				</div>
